@@ -37,7 +37,7 @@ class LoginPage{
     }
 
     GetLogoutButton() {
-        cy.get('#submit')
+      return cy.get('#submit')
         .should('be.visible')
         .contains('Log out')
     }

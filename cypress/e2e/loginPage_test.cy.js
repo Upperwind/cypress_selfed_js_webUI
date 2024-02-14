@@ -57,7 +57,6 @@ describe('Unsuccessful Login Attemps', () => {
 
     loginPage.GetLoginButton().click()
 
-    // Add assertions here to verify successful login
   });
 });
 
@@ -75,8 +74,6 @@ describe('Successful Login Run', () => {
     loginPage.GetsUserNameField().type('samenub') // Use the appropriate method to input email
     loginPage.GetPassField().type('P@ssw0rd1') // Use the appropriate method to input the password
     loginPage.GetLoginButton().click()
-    loginPage.GetLogoutButton()
-
-    // Add assertions here to verify successful login
+    loginPage.GetLogoutButton().click()
   });
 });
